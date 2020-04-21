@@ -12,3 +12,5 @@ What this means is that when someone uses our web app, the following will occur.
 * Once the Lambda function receives the user's review, it will process that review by tokenizing it and then creating a bag of words encoding of the result. After that, it will send the processed review off to our deployed model.
 * Once the deployed model performs inference on the processed review, the resulting sentiment will be returned back to the Lambda function.
 * Our Lambda function will then return the sentiment result back to our web app using the endpoint that was constructed using API Gateway.
+
+**In SageMake deploying the model means, creating an Endpoint.**
