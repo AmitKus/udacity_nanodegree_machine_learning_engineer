@@ -13,4 +13,9 @@ What this means is that when someone uses our web app, the following will occur.
 * Once the deployed model performs inference on the processed review, the resulting sentiment will be returned back to the Lambda function.
 * Our Lambda function will then return the sentiment result back to our web app using the endpoint that was constructed using API Gateway.
 
+<<<<<<< HEAD
+
+**lambda function**: Function as a service. Run the function when specific event occurs. Do not run it the whole time.
+=======
 **In SageMake deploying the model means, creating an Endpoint.**
+>>>>>>> 3a615eeaf41971e7e7e53ae579e6555eac68a4a9
