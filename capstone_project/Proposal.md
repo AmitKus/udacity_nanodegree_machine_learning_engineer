@@ -1,12 +1,12 @@
-# Growth pattern from birth to adulthood in Kung! tribe
+# Capstone Project
 
 This is the proposal for the capstone project for the Machine Learning Nanodegree in Udacity.
 
-## Domain background 
+## Domain background
 
-Height is determined by a combination of genetics and environmental factors. Nutrion and illness in childhood limits the human growth. So height is a very good measurement of living conditions and therefore used by the historians to understand the evolution of human living condition. Additionally, the variation in height within a given population is largely determined by the genetics. 
+Height is determined by a combination of genetics and environmental factors. Nutrition and illness in childhood limits the human growth. So height is a very good measurement of living conditions and therefore used by the historians to understand the evolution of human living condition [1]. Additionally, the variation in height within a given population is largely determined by the genetics. 
 
-In this work, we will look at height-vs-age data collected by Nancy Powell in 1969 for the Kung! tribe. The goal is to capture the characteristic and variation in  this age-vs-height data in a model. By comparing the historical evolution of this model, which is not a part of this study, we can track the progress of human living standard.
+In this work, we will look at height-vs-age data collected by Nancy Powell in 1969 for the Kung! tribe.[2] The goal is to capture the characteristic and variation in  this age-vs-height data into a model. By comparing the historical evolution of this model, which is not a part of this study, we can estimate the progress of human living standard.
 
 Kung! is a tribe which lives in the southern part of Africa, on the western part of the Kalahari sand system. They are hunter-gatherers with a total population somewhere between 50,000 and 100,000.  The !Kung language, commonly called $Ju$, is one of the larger click languages. Here is a [wikipedia link](https://en.wikipedia.org/wiki/%C7%83Kung_people) for more information about Kung! tribe.
 
@@ -15,7 +15,7 @@ Kung! is a tribe which lives in the southern part of Africa, on the western part
 The project aims at understanding the relationship between the height and age for the Kung! tribe.
 Below is a snapshot of the data from a [public website](https://public.tableau.com/views/kung-san/Attributes?%3Aembed=y&%3AshowVizHome=no&%3Adisplay_count=y&%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true).
 
-![](HeightvsAge.png)
+<img src="HeightvsAge.png" alt="drawing" height="300"/>
 Fig 1: Plot of height vs age data for Kalahari Kung! San people collected by Nancy Howell.
 
 ## Problem statement 
@@ -44,15 +44,20 @@ For our purpose, we will only use the height and age columns.
 
 **Scatter plot for age vs height**
 
-![](h_vs_age.png)
+The scatter plot between age and height is clearly non-linear with steep increase of height with age in the beginning. Though there is less data for age 50 and above, it appears there is a negative trend in the data. So the older folks are shorter which might indicate that the the nutritional status of the tribe has improved over the years.
+
+<img src="h_vs_age.png" alt="drawing" height="300"/>
 
 **Distribution of age**
 
-![](age_dist.png)
+The distribution of age clearly shows that we have more data points for age 50 and below compared to 50 and above.
+
+<img src="age_dist.png" alt="drawing" height="300"/>
 
 **Distribution of height**
 
-![](height_dist.png)
+<img src="height_dist.png" alt="drawing" height="300"/>
+
 
 ## Solution statement 
 
@@ -86,7 +91,7 @@ The project will follow the following workflow:
 
 We will use the [PyMC3](https://docs.pymc.io/) package for this work. PyMC3 is a Python package for Bayesian statistical modeling and Probabilistic Machine Learning.
 
-
 ## References
 
-1. Life Histories of the Dobe !Kung: Food, Fatness, and Well-being over the Life-span. Nancy Howell 2010
+1. Walker, R., Gurven, M., Hill, K., Migliano, A., Chagnon, N., De Souza, R., Djurovic, G., Hames, R., Hurtado, A. M., Kaplan, H., Kramer, K., Oliver, W. J., Valeggia, C., & Yamauchi, T. (2006). Growth rates and life histories in twenty-two small-scale societies. American Journal of Human Biology, 18(3), 295-311. https://doi.org/10.1002/ajhb.20510
+2. Nancy Howell (2010). Life Histories of the Dobe !Kung: Food, Fatness, and Well-being over the Life-span. 
