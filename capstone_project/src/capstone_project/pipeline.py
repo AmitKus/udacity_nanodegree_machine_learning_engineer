@@ -31,7 +31,7 @@
 
 from typing import Dict
 from kedro.pipeline import Pipeline
-
+from kedro.pipeline.decorators import log_time
 
 
 ###########################################################################
@@ -43,7 +43,6 @@ from kedro.pipeline import Pipeline
 
 from capstone_project.pipelines import data_engineering as de
 from capstone_project.pipelines import data_science as ds
-
 
 def create_pipelines(**kwargs) -> Dict[str, Pipeline]:
     """Create the project's pipeline.
@@ -57,8 +56,8 @@ def create_pipelines(**kwargs) -> Dict[str, Pipeline]:
     """
 
 
-    data_engineering_pipeline = de.create_pipeline()
-    data_science_pipeline = ds.create_pipeline()
+    data_engineering_pipeline = de.create_pipeline().decorate(log_time)
+    data_science_pipeline = ds.create_pipeline().decorate(log_time)
 
     return {
         "de": data_engineering_pipeline,

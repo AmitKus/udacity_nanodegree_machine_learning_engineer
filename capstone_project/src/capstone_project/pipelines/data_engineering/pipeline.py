@@ -34,21 +34,23 @@ Delete this when you start working on your own Kedro project.
 
 from kedro.pipeline import Pipeline, node
 
-from .nodes import split_data
+from .nodes import preprocess_howell1, split_data
 
 
 def create_pipeline(**kwargs):
     return Pipeline(
         [
             node(
-                split_data,
-                ["example_iris_data", "params:example_test_data_ratio"],
-                dict(
-                    train_x="example_train_x",
-                    train_y="example_train_y",
-                    test_x="example_test_x",
-                    test_y="example_test_y",
-                ),
-            )
+                func=preprocess_howell1,
+                inputs="howell1",
+                outputs="howell1_std_age",
+                name="preprocess_howell1",
+            ),
+            node(
+                func=split_data,
+                inputs=["howell1_std_age","params:test_size","params:random_state"], 
+                outputs=["X_train", "X_test", "y_train", "y_test"], 
+                name="split_data",
+            ),
         ]
     )
