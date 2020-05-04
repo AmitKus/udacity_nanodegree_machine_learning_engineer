@@ -1,5 +1,0 @@
-{
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.pythonPath": "/home/amit/anaconda3/envs/stat-rethink-pymc3/bin/python"
-}
