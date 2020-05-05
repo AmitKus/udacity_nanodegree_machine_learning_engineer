@@ -18,7 +18,7 @@ class Model:
         self.xcol = xcol
         self.ycol = ycol
 
-    def fit(self, df_data, prior_b_sigma=1):
+    def fit(self, df_data, prior_b_sigma=10):
         """
         Defines and fits the pymc3 probabilistic model
         
