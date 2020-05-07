@@ -10,6 +10,11 @@ One of the most important characteristics of probability models is that it also 
 
 The final model’s qualities—such as parameters—are evaluated in detail. Some type of analysis is used to validate the robustness of the model’s solution.
 
+### Information criterion
+
+In this section, we present quantitivie measures to compare the various models. 
+
+
 Justification
 
 The final results are compared to the benchmark result or threshold with some type of statistical analysis. Justification is made as to whether the final model and solution is significant enough to have adequately solved the problem.
