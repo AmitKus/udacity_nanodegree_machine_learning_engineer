@@ -4,7 +4,7 @@ This is a demographic data from Kalahari !Kung San people collected by Nancy How
 
 ![](pics/DataSnapshot.png)
 
-The next figure shows the summary statistics of the data. 
+The next figure shows the summary statistics of the data.
 
 ![](pics/SummaryStatistics.png)
 
@@ -24,7 +24,7 @@ If we split the distribution based on gender, as shown in figure below, we see t
 
 ![](pics/height_dist_gender.png)
 
-Next, we'll look at the distribution of age in the figure below. The data covers a wide range of age starting from newborns to around 90 years old. 
+Next, we'll look at the distribution of age in the figure below. The data covers a wide range of age starting from newborns to around 90 years old.
 
 ![](pics/age_dist.png)
 
@@ -38,23 +38,16 @@ Finally, we can look at the scatter plot of age vs height. This plot is of parti
 
 As expected, the height seems to eventually plateau with age. For this dataset, that plateau seems to be occurring around age of 20. Moreover, male heights seem to be taller than females, in general. As this data was collected in a time span of 2 years, the decrease in height with ag towards the end is a very interesting feature. At a high-level, this indicates that younger generation is taller than the older generation which hints towards an improving lifestyle and better nutrition. Overall, the relationship is very non-linear in nature and can't be captured by a simple linear relationship between height and age.
 
-
-
 ## Algorithms and Techniques: Probabilistic Machine Learning
 
-In the probabilistic modeling setting, we have a model which describes the data that one observes from a system. We use probability theory to express all forms of uncertainty and noise associated with our model. Then we use Bayes rules to infer unknown quantities, adapt our models, make predictions and learn from data. We have a very similar setting here where we are trying to invert for parameters in the  polynomial  models. We start with some prior distributions on these parameters which express our initial belief along with the uncertainty. Then we use data to infer these unknown parameters and make predictions based on the learned model. We are particularly interested in the uncertainty or the distribution as that represents some of the genetic variations present in the data. [5, 6, 7]
-
+In the probabilistic modeling setting, we have a model which describes the data that one observes from a system. We use probability theory to express all forms of uncertainty and noise associated with our model. Then we use Bayes rules to infer unknown quantities, adapt our models, make predictions and learn from data. We have a very similar setting here where we are trying to invert for parameters in the polynomial models. We start with some prior distributions on these parameters which express our initial belief along with the uncertainty. Then we use data to infer these unknown parameters and make predictions based on the learned model. We are particularly interested in the uncertainty or the distribution as that represents some of the genetic variations present in the data. [5, 6, 7]
 
 ## Benchmark
 
-As we will in the next sections, we will be fitting a collection of polynomial models to this data and utilize information critera to choose the best model among them. For the benchmarking purposes we will assume a linear model to be our benchmark. 
+As we will in the next sections, we will be fitting a collection of polynomial models to this data and utilize information criteria to choose the best model among them. For the benchmarking purposes we will assume a linear model to be our benchmark.
 
 5] Andrew Gelman, Hal S Stern, John B Carlin, David B Dunson, Aki Vehtari, and Donald B Rubin. Bayesian data analysis. Chapman and Hall/CRC, 2013.
 
 [6] John Kruschke. Doing Bayesian data analysis: A tutorial with R, JAGS, and Stan. Academic Press, 2014.
 
 [7] Michael Betancourt. A conceptual introduction to hamiltonian monte carlo. arXiv preprint arXiv:1701.02434, 2017.
-
-
-
-
