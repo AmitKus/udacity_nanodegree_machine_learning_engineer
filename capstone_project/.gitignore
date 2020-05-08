@@ -9,3 +9,7 @@ report/pics
 # proposal folder
 proposal/*.png
 proposal/*.md
+
+
+# code
+code/equations.ipynb
