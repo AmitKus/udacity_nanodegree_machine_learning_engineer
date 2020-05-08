@@ -1,0 +1,10 @@
+__pycache__/
+
+# report folder
+report/*.md
+report/pics
+
+
+# proposal folder
+proposal/*.png
+proposal/*.md
